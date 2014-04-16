@@ -3,6 +3,6 @@
 	<title>Hola Naty</title>
 </head>
 <body>
-<?php echo 'Hola mundo' ?>
+<?php echo 'Hola naty' ?>
 </body>
 </html>
