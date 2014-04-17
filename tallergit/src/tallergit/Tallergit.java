@@ -20,7 +20,7 @@ public class Tallergit {
         System.out.println("Mi segundo commit");
         System.out.println("Linea agregada desde la web, editado en web");
         //nalia paso por aqui
-        System.out.println("liss");
+        System.out.println("xd");
     }
     
 }
