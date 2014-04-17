@@ -1,6 +1,6 @@
 <?php
 
-class CountriesController extends Controller
+class FichaMedicaController extends Controller
 {
 	public function actionIndex()
 	{
@@ -12,10 +12,10 @@ class CountriesController extends Controller
 		#$model->save();
 		#hasta aqui comentado para INSERT,descomentar para agregar valor a BD
 		#accede a todos los datos que estan dentro de la tabla countries
-		$countries=Countries::model()->findAll();
+		$fichamedica=FichaMedica::model()->findAll();
 		#enviar#en este caso se usa el mismo nombre, le pasa el resultado de la consulta a la vista, esta debe tener mismo nombre de controlador
 		#en este caso se usa el mismo nombre, le pasa el resultado de la consulta
-		$this->render("index",array("countries"=>$countries));
+		$this->render("index",array("fichamedica"=>$fichamedica));
 	}
 	public function actionCreate()
 	{
@@ -24,20 +24,20 @@ class CountriesController extends Controller
 		//cerrar aplicacion:
 		//Yii::app()->end();
 
-		$model=new Countries();
+		$model=new FichaMedica();
 		//
-		if(isset($_POST["Countries"]))
+		if(isset($_POST["FichaMedica"]))
 		{
 			#en ves de hacer esto x campo x campo:
 			/*$model->id=$_POST["Countries"]["id"];
 			$model->nombre=$_POST["Countries"]["nombre"];
 			$model->estado=$_POST["Countries"]["estado"];
 			#se hace esto una ves y trae todos los campos:*/
-			$model->attributes=$_POST["Countries"];
+			$model->attributes=$_POST["FichaMedica"];
 			if($model->save())
 			{
 				//echo "Guardado con exito";
-				$this->redirect(array("countries/index"));
+				$this->redirect(array("fichamedica/index"));
 			}
 		} 
 		$this->render("create",array("model"=>$model));

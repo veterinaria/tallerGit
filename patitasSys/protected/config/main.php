@@ -50,7 +50,7 @@ return array(
 		),
 		
 		'db'=>array(
-		'connectionString' => 'pgsql:host=localhost;port=5432;dbname= prueba_1',
+		'connectionString' => 'pgsql:host=localhost;port=5432;dbname= patitasSys',
 		'username' => 'postgres',
 		'password' => '46714834',
 		'charset' => 'utf8',
