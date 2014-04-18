@@ -26,11 +26,11 @@ $form=$this->beginWidget("CActiveForm");
 <?php echo $form->error($model,"fichmed_peso");?>
 <br>
 <b>Diagnostico:</b><br>
-<?php echo $form->textField($model,"fichmed_diagnostico");?>
+<?php echo $form->textArea($model,"fichmed_diagnostico");?>
 <?php echo $form->error($model,"fichmed_diagnostico");?>
 <br>
 <b>Indicaciones:</b><br>
-<?php echo $form->textField($model,"fichmed_indicacion");?>
+<?php echo $form->textArea($model,"fichmed_indicacion");?>
 <?php echo $form->error($model,"fichmed_indicacion");?>
 <br>
 <?php echo CHtml::submitButton("Ingresar",array("class"=>"btn btn-primary btn-large"));?>
