@@ -1099,3 +1099,248 @@ Stack trace:
 REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
 HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
 ---
+2014/04/19 01:21:17 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:21:47 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:21:50 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:23:33 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:23:37 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:24:49 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:28:23 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:28:26 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:37:08 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (36)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:48:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 4) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:48:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 4) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 01:57:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 5) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 01:57:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 5) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:05:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-8, 1, 1, 1.1, na, nan).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:05:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-8, 1, 1, 1.1, na, nan).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:07:03 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (20)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:07:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-8, 1, 1, 1.1, na, nq).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:07:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-8, 1, 1, 1.1, na, nq).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:09:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 1) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("fichmed_id", "clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:09:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 1) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("fichmed_id", "clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:09:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 1) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("fichmed_id", "clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:09:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «ficha_medica» viola la llave foránea «fk_ficha_me_posee_mascota»
+DETAIL:  La llave (clie_rut, masc_id)=(11111111-8, 1) no está presente en la tabla «mascota».. The SQL statement executed was: INSERT INTO "ficha_medica" ("fichmed_id", "clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:10:12 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (20)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:10:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-1, 1, 1, 1.1, na, nq).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:10:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-1, 1, 1, 1.1, na, nq).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:10:18 [warning] [application] Failed to set unsafe attribute "fichmed_id" of "FichaMedica".
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (20)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:10:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-1, 1, 1, 1.1, na, nq).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (21)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 02:10:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «fichmed_id» viola la restricción not null
+DETAIL:  La fila que falla contiene (null, 11111111-1, 1, 1, 1.1, na, nq).. The SQL statement executed was: INSERT INTO "ficha_medica" ("clie_rut", "masc_id", "fichmed_edad_masc", "fichmed_peso", "fichmed_diagnostico", "fichmed_indicacion") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\wamp\www\tallerGit\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(21): CActiveRecord->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('fichamedica/cre...')
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+HTTP_REFERER=http://localhost/tallerGit/patitasSys/fichamedica/create
+---
+2014/04/19 02:49:28 [error] [php] strpos() expects at most 3 parameters, 4 given (C:\wamp\www\tallerGit\patitasSys\protected\extensions\MyValidator.php:12)
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\base\CModel.php(159): MyValidator->validate()
+#1 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(805): FichaMedica->validate()
+#2 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(20): FichaMedica->save()
+#3 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): FichaMedicaController->runAction()
+#6 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): FichaMedicaController->runActionWithFilters()
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): FichaMedicaController->run()
+#8 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tallerGit\patitasSys\index.php(14): CWebApplication->run()
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+in C:\wamp\www\tallerGit\patitasSys\protected\extensions\MyValidator.php (12)
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (20)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)
+2014/04/19 03:27:22 [error] [php] Undefined variable: fichmed_edad_masc (C:\wamp\www\tallerGit\patitasSys\protected\extensions\MyValidator.php:11)
+Stack trace:
+#0 C:\wamp\www\tallerGit\yii\framework\db\ar\CActiveRecord.php(805): FichaMedica->validate()
+#1 C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php(20): FichaMedica->save()
+#2 C:\wamp\www\tallerGit\yii\framework\web\actions\CInlineAction.php(49): FichaMedicaController->actionCreate()
+#3 C:\wamp\www\tallerGit\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\wamp\www\tallerGit\yii\framework\web\CController.php(286): FichaMedicaController->runAction()
+#5 C:\wamp\www\tallerGit\yii\framework\web\CController.php(265): FichaMedicaController->runActionWithFilters()
+#6 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(282): FichaMedicaController->run()
+#7 C:\wamp\www\tallerGit\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\wamp\www\tallerGit\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\tallerGit\patitasSys\index.php(14): CWebApplication->run()
+REQUEST_URI=/tallerGit/patitasSys/fichamedica/create
+in C:\wamp\www\tallerGit\patitasSys\protected\extensions\MyValidator.php (11)
+in C:\wamp\www\tallerGit\patitasSys\protected\controllers\FichaMedicaController.php (20)
+in C:\wamp\www\tallerGit\patitasSys\index.php (14)

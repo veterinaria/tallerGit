@@ -3,12 +3,8 @@
 #widget para crear formularios, this es el controlador este seria controlador countries
 $form=$this->beginWidget("CActiveForm");
 ?>
-<!--se crean campos, recibe modelo y nombre campo -->
 
-<b>Id Ficha Medica:</b><br>
-<?php echo $form->textField($model,"fichmed_id");?>
-<?php echo $form->error($model,"fichmed_id");?>
-<br>
+
 <b>Rut Cliente:</b><br>
 <?php echo $form->textField($model,"clie_rut");?>
 <?php echo $form->error($model,"clie_rut");?>
